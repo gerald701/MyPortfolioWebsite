@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="theme-toggle">
+      <label><input type="checkbox" id="themeSwitch"> Toggle Light/Dark Mode</label>
+    </div>
+
+    <h1>Typing Speed Tester</h1>
+    <div id="quoteDisplay"></div>
+    <textarea id="quoteInput" placeholder="Start typing here..." disabled></textarea>
+
+    <div class="stats">
+      <p>⏱ Time: <span id="timer">0</span>s</p>
+      <p>🚀 WPM: <span id="wpm">0</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">100</span>%</p>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="high-score">
+      🏆 High Score: <span id="highScore">WPM 0, Accuracy 0%</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
